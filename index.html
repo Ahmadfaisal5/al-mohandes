@@ -1,66 +1,283 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الاتصال بنجاح</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #1a1a2e;
-            line-height: 1.6;
-            padding: 50px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 139, 0.1);
-            padding: 40px;
-            text-align: center;
-            border: 1px solid #e6f0ff;
-        }
-        h1 {
-            color: #0056b3;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 86, 179, 0.1);
-        }
-        .subtitle {
-            color: #4a5568;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-        .welcome-message {
-            background: linear-gradient(135deg, #e6f0ff 0%, #cde6ff 100%);
-            border-left: 5px solid #0056b3;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .signature {
-            color: #0056b3;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>مرحباً بك في المهندس للخدمات الرقمية</h1>
-        <p class="subtitle">نشكرك على زيارتك لموقعنا</p>
-        <div class="welcome-message">
-            <p>نتمنى لك يومًا موفقًا ومباركًا</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="المهندس للخدمات الوظيفية والأكاديمية: تصميم السيرة الذاتية، التقديم للوظائف الخليجية، المنح الدراسية، المواقع الإلكترونية، الحلول الرقمية." />
+    <title>المهندس | الخدمات الوظيفية والأكاديمية</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html" aria-label="العودة للصفحة الرئيسية">
+          <img src="./assets/logo-mark.svg" alt="شعار المهندس" />
+          <span>المهندس</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <ul>
+            <li><a href="./index.html" class="active">الرئيسية</a></li>
+            <li><a href="./services.html">الخدمات</a></li>
+            <li><a href="./portfolio.html">المعرض</a></li>
+            <li><a href="./about.html">من نحن</a></li>
+            <li><a href="./faq.html">الأسئلة</a></li>
+            <li><a href="./contact.html">تواصل معنا</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">نحوّل فكرتك إلى واقعك</span>
+            <h1>المهندس للخدمات الوظيفية والأكاديمية</h1>
+            <p>
+              نساعد الباحثين عن الوظائف، الطلبة، الباحثين، ورواد الأعمال على تحويل الأفكار إلى
+              فرص حقيقية من خلال خدمات احترافية في التقديم، التصميم، البحث، والابتكار الرقمي.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./contact.html">اطلب خدمتك الآن</a>
+              <a class="btn btn-secondary" href="./services.html">استعرض خدماتنا</a>
+            </div>
+            <ul class="hero-meta" aria-label="معلومات أساسية">
+              <li>خدمات مكتملة واحترافية</li>
+              <li>تواصل مباشر وسريع</li>
+              <li>حلول عربية وموجهة للواقع</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <img src="./assets/hero-illustration.svg" alt="تمثيل بصري لخدمات المهندس" />
+          </div>
         </div>
-        <p class="signature">فريق المهندس للخدمات الرقمية</p>
-    </div>
-</body>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">خدماتنا</span>
+            <h2>حلول متكاملة لكل مرحلة من رحلتك</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="icon-box">CV</div>
+              <h3>تصميم السيرة الذاتية</h3>
+              <p>سير ذاتية احترافية ومتوافقة مع معايير ATS لتناسب سوق العمل.</p>
+              <a href="./cv-services.html">اقرأ المزيد</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">وظائف</div>
+              <h3>التقديم للوظائف الخليجية</h3>
+              <p>دعم في البحث عن الفرص، إعداد الملفات، وتنسيق التقديم بشكل احترافي.</p>
+              <a href="./jobs.html">اقرأ المزيد</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">رسالة</div>
+              <h3>خطابات التقديم</h3>
+              <p>كتابة رسائل توظيف ملائمة للمؤسسات واحترافية ومقنعة.</p>
+              <a href="./jobs.html">اقرأ المزيد</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">منح</div>
+              <h3>التقديم للمنح الدراسية</h3>
+              <p>تحضير ملفات المنح بشكل مناسب واحترافي لزيادة فرص القبول.</p>
+              <a href="./scholarships.html">اقرأ المزيد</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">إعلان</div>
+              <h3>تصميم البوسترات والإعلانات</h3>
+              <p>تصاميم جذابة ترفع من حضور علامتك التجارية وتجذب الجمهور المستهدف.</p>
+              <a href="./digital-solutions.html">اقرأ المزيد</a>
+            </article>
+
+            <article class="service-card">
+              <div class="icon-box">بحث</div>
+              <h3>تنسيق البحوث والكتب</h3>
+              <p>تنسيق ملفات البحث، المجلات، والمطبوعات بطريقة احترافية ومنظمة.</p>
+              <a href="./digital-solutions.html">اقرأ المزيد</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container why-us-grid">
+          <div>
+            <span class="eyebrow">لماذا نحن؟</span>
+            <h2>نعمل باهتمام، ونتعامل مع كل عميل كفرصة لبناء علاقة طويلة</h2>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>تجربة مخصصة</h3>
+              <p>نقارب كل خدمة بناءً على هدف العميل واحتياجاته الفعلية.</p>
+            </div>
+            <div class="feature-item">
+              <h3>اعتماد احترافي</h3>
+              <p>نعتمد في كل عمل على تفاصيل دقيقة، تنسيق أنيق، ومحتوى مؤثر.</p>
+            </div>
+            <div class="feature-item">
+              <h3>التواصل المباشر</h3>
+              <p>تواصل سريع ومباشر عبر واتساب أو البريد الإلكتروني لتسريع الإنجاز.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">خطوات الطلب</span>
+            <h2>عملية بسيطة وسريعة</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span>01</span>
+              <h3>تحديد الخدمة</h3>
+              <p>تواصل معنا عبر الواتساب أو النموذج للتعرف على الخدمة المناسبة.</p>
+            </div>
+            <div class="step-card">
+              <span>02</span>
+              <h3>إرسال التفاصيل</h3>
+              <p>نستلم بياناتك، متطلباتك، وموعد التسليم المتوقع.</p>
+            </div>
+            <div class="step-card">
+              <span>03</span>
+              <h3>العمل الاحترافي</h3>
+              <p>نعمل على الخدمة وفق أعلى معايير الجودة والتنسيق.</p>
+            </div>
+            <div class="step-card">
+              <span>04</span>
+              <h3>التسليم والتواصل</h3>
+              <p>نقدم لك النتيجة النهائية، ونراجع معها أي تعديلات مطلوبة.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">الأعمال</span>
+            <h2>معرض أعمالنا</h2>
+          </div>
+
+          <div class="portfolio-preview">
+            <article class="portfolio-card">
+              <div class="portfolio-thumb light-blue"></div>
+              <h3>سيرة ذاتية ATS متقدمة</h3>
+              <p>تصميم وظيفي يركز على سهولة القراءة وتنسيق احترافي.</p>
+            </article>
+            <article class="portfolio-card">
+              <div class="portfolio-thumb deep-blue"></div>
+              <h3>خطة التقديم الخليجية</h3>
+              <p>تجهيز ملف التقديم والتنسيق للمؤسسات السعودية والإماراتية.</p>
+            </article>
+            <article class="portfolio-card">
+              <div class="portfolio-thumb white-blue"></div>
+              <h3>تصميم واجهة موقع</h3>
+              <p>واجهة مواقع حديثة، سريعة، متجاوبة، وعملية.</p>
+            </article>
+          </div>
+
+          <div class="center-row">
+            <a class="btn btn-primary" href="./portfolio.html">استعرض جميع الأعمال</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container faq-compact">
+          <div class="section-heading">
+            <span class="eyebrow">الأسئلة الشائعة</span>
+            <h2>أسئلة متكررة</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question" type="button">هل يمكن طلب خدمة واحدة فقط؟</button>
+              <div class="faq-answer">
+                <p>نعم، يمكنك طلب خدمة واحدة أو أكثر وفق احتياجك؛ ونصمم العملية حسب المشروع المطلوب.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">هل يتم العمل عن بعد؟</button>
+              <div class="faq-answer">
+                <p>نعم، العمل يتم بالكامل عن بعد مع متابعة مباشرة وتواصل واضح عبر البريد أو الواتساب.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">هل أستطيع طلب تعديلات؟</button>
+              <div class="faq-answer">
+                <p>بالتأكيد، يمكن طلب مراجعات والتعديلات ضمن إطار الخدمة المتفق عليه.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">تواصل مباشر</span>
+            <h2>ابدأ رحلتك اليوم</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://wa.me/249128520192" target="_blank" rel="noreferrer">واتساب</a>
+            <a class="btn btn-secondary" href="mailto:aahh75838@gmail.com">البريد الإلكتروني</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="./index.html">
+            <img src="./assets/logo-mark.svg" alt="شعار المهندس" />
+            <span>المهندس</span>
+          </a>
+          <p>نحوّل فكرتك إلى واقعك من خلال خدمات تعليمية ووظيفية رقمية احترافية.</p>
+        </div>
+
+        <div>
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="./services.html">الخدمات</a></li>
+            <li><a href="./portfolio.html">المعرض</a></li>
+            <li><a href="./about.html">من نحن</a></li>
+            <li><a href="./faq.html">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>تواصل</h3>
+          <ul>
+            <li><a href="mailto:aahh75838@gmail.com">aahh75838@gmail.com</a></li>
+            <li><a href="https://wa.me/249128520192" target="_blank" rel="noreferrer">+249128520192</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2025 المهندس. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

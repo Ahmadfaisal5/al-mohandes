@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">شعار المهندس</title>
+  <desc id="desc">شعار نصي وأيقونة بألوان زرقاء</desc>
+  <rect width="220" height="220" rx="36" fill="#0d3b66"/>
+  <path d="M58 150V72h28l28 29 28-29h28v78h-26V96l-30 31-30-31v54H58z" fill="#ffffff"/>
+  <rect x="58" y="154" width="104" height="12" rx="6" fill="#86b7ff"/>
+</svg>
